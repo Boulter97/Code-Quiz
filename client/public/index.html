@@ -6,22 +6,51 @@
 <body>
     <div id="quiz-container">
         <h1>Coding Quiz</h1>
-        <div id="timer">Timer: <span id="time">0</span></div>
-        <div id="question"></div>
-        <div id="choices"></div>
-        <div id="result"></div>
-        <div id="finish" style="display: none;">
+            <div id="timer">Timer: <span id="time">0</span></div>
+            <div id="question"></div>
+            <div id="choices"></div>
+            <div id="result"></div>
+            <div id="finish" style="display: none;">
         <h2>Finish</h2>
-    <form id="score-form"
-    <label for="initials">Enter Initials:</label>
-    <input type="text" id="initials" required>
-    
-
-
-
-
-
-</div>
+            <form id="score-form">
+            <label for="initials">Enter Initials:</label>
+            <input type="text" id="initials" required>
+            <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
+
+    <script>
+        const questions =[{
+
+            question: "A coder who can develop both client-side and server-side software is known as a full-___ developer.What word that can also mean a serving of pancakes goes in the blank?",
+            choices:["Stack", "Pile", "Column", "Tower"],
+            answer:"Stack",
+        },
+        {
+            question: "Which of the following is not a programming language?",
+            choices:["Python", "HTML", "CSS", "MySQL"],
+            answer:"MySQL",
+        },
+        {   
+            question: "What does HTML stand for?",
+            choices:["HyperText Markup Language", "High-Level Programming Language", "Home Tool Markup Language", "Hyperlink and Text Manipulation Language"],
+            answer:"HyperText Markup Language",
+        },
+        {
+            question: "Which of the following us a dynamically typed programming language?",
+            choices:["Java", "C++", "Python", "C#"],
+            answer:"Python",
+        },
+        {
+            question: "What is the purpose of version control systems like Git?",
+            choices:["to manage databases", "to track changes in source code files", "to compile programming languages", "to design user interfaces"],
+            answer:" to track changes in source code files",
+        },
+        ];
+    </script>
 </body>
+<footer>
+
+</footer>
 </html>
