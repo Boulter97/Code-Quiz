@@ -110,7 +110,7 @@ function updateLeaderboard() {
     const leaderboardList = document.getElementById("leaderboard-list");
     leaderboardList.innerHTML = "";
 
-    const maxScoreToShow = Math,min(5, quizScores.length);
+    const maxScoreToShow = Math.min(5, quizScores.length);
     for (let i = 0; i <maxScoreToShow; i++) {
         const listItem = document.createElement("li");
         listItem.textContent = `${quizScores[i].initials}: ${quizScores[i].score}`;
