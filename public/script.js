@@ -29,8 +29,10 @@ const questions = [
 let currentQuestionIndex = 0;
 let timer;
 let timeRemaining = 60;
+let quizScores =[];
 
 function startQuiz() {
+    document.getElementById("start-button").style.display = "none";
     document.getElementById("finish").style.display = "none";
     document.getElementById("timer").style.display = "block";
     renderQuestion();
@@ -48,6 +50,7 @@ function renderQuestion() {
     currentQuestion.choices.forEach((choice, index) => {
         const choiceButton = document.createElement("button");
         choiceButton.textContent = choice;
+        choiceButton.classList.add("choice-button");
         choiceButton.addEventListener("click", handleAnswer);
         choicesElement.appendChild(choiceButton);
     });
@@ -100,3 +103,18 @@ document.getElementById("score-form").addEventListener("submit", function (event
     const initials = document.getElementById("initials").value;
     const score = timeRemaining;
 });
+
+function updateLeaderboard() {
+    quizScores.sort((a, b) => b.score - a.score);
+
+    const leaderboardList = document.getElementById("leaderboard-list");
+    leaderboardList.innerHTML = "";
+
+    const maxScoreToShow = Math,min(5, quizScores.length);
+    for (let i = 0; i <maxScoreToShow; i++) {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${quizScores[i].initials}: ${quizScores[i].score}`;
+        leaderboardList.appendChild(listItem);
+    } 
+
+}
