@@ -4,6 +4,8 @@
 **Project Description**
 -
 this week's homework is to develop a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
+
+dev notes - didn't finish the leaderboard fuction and some more css styling that i wish to add more.
  
 **User Story**
 -
