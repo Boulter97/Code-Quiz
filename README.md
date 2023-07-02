@@ -27,7 +27,7 @@ this week's homework is to develop a timed coding quiz with multiple-choice ques
 
 **Deployed link & Screenshot**
 -
-- (Put Link Here)
+- https://conorcodequiz.netlify.app/ 
 
 <img width="1359" alt="Screenshot 2023-07-02 at 8 07 57 pm" src="https://github.com/Boulter97/Code-Quiz/assets/118101244/86eea173-69a5-4a13-a763-be288964eddd">
 <img width="1359" alt="Screenshot 2023-07-02 at 8 08 06 pm" src="https://github.com/Boulter97/Code-Quiz/assets/118101244/089f8a4b-b00b-44e7-9bda-2ae67cf14fb3">
